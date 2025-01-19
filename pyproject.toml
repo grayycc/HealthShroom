@@ -4,4 +4,22 @@ version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "bmi>=1.0.0",
+    "diffusers>=0.32.2",
+    "metabasepy>=1.12.0",
+    "pandas>=2.2.3",
+    "pytelegrambotapi>=4.26.0",
+    "replit>=4.1.0",
+    "telegram>=0.0.1",
+    "torch>=2.5.1",
+]
+
+[[tool.uv.index]]
+explicit = true
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "platform_system == 'Linux'" }]
+torchvision = [{ index = "pytorch-cpu", marker = "platform_system == 'Linux'" }]
