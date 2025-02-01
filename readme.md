@@ -2,6 +2,8 @@
 
 A Telegram bot that helps users track their health goals, such as weight loss or fitness improvement. The bot collects user data (age, gender, current weight, goal weight, etc.), stores the information in a SQLite database, and provides personalized meal recommendations based on their goals.
 
+<img src="https://github.com/grayycc/HealthShroom/blob/main/Image.webp" width="200">
+
 ## Features
 
 - **User Registration**: Allows users to create a profile by providing their Telegram username, gender, age, weight, goal weight, and height.
